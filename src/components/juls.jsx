@@ -4,7 +4,7 @@ const Juls = () => {
     const [displayHiImText, setDisplayHiImText] = useState('');
     const [displayJulsText, setDisplayJulsText] = useState('');
     const originalHiImText = "HI, IM ";
-    const originalJulsText = "JULS";
+    const originalJulsText = "JULIAN";
 
     useEffect(() => {
         let hiImIndex = 0;
@@ -31,7 +31,7 @@ const Juls = () => {
 
     return (
         <div className="hicontainer">
-            <p data-text-value="HI, IM JULS">{displayHiImText}<strong>{displayJulsText}</strong></p>
+            <p data-text-value="HI, IM JULIAN">{displayHiImText}<strong>{displayJulsText}</strong></p>
         </div>
     );
 }

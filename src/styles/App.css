@@ -99,14 +99,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 120px;
+  width: auto;
+  height: 500px;
 }
 
 .hicontainer p {
   color:#F3F4E5;
   font-size: 100px;
   transition: font-size 0.3s ease;
-
 }
 
 .hicontainer span {
@@ -122,3 +123,203 @@ header {
 }
 
 /* END OF HI IM JULS CSS */
+
+
+/* ABOUT ME CSS */
+
+.aboutcontainer {
+  font-family: "Poppins";
+  color: #F3F4E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 800px;
+  margin-bottom: 100px;
+  transition: font-size 0.3s ease;
+} 
+
+.infocontainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: -80px;
+  margin-top: -400px;
+}
+
+.imagecontainer {
+  margin-top: -500px;
+  margin-left: 150px;
+  opacity: 1; 
+  transition: opacity 0.5s ease;
+}
+
+.imagecontainer img { 
+  width: 500px;
+  height: auto;
+  animation: fadeIn 0.5s ease;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  animation: fadeIn 0.1s ease;
+  transition: font-size 0.3s ease;
+}
+
+.myname {
+  font-size: 80px;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.course {
+  font-size: 50px;
+  margin-top: -20px;
+  animation: fadeIn 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.bio {
+  font-size: 22px;
+  width: 650px;
+  height: auto;
+  margin-top: 5px;
+  animation: fadeIn 0.4s ease;
+  transition: font-size 0.3s ease;
+}
+
+.resumeBtn {
+  background-color: #F3F4E5;
+  color: #1e1e1e;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 50px;
+  width: 300px;
+  height: auto;
+  border-radius: 34px;
+  margin-top: 20px;
+  transition: transform 0.3s ease; 
+  animation: fadeIn 0.5s ease;
+}
+
+.resumeBtn:hover {
+  transform: scale(1.1); 
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutcontainer {
+    margin-top: 550px;
+  }
+
+  .imagecontainer {
+    margin-top: -500px;
+    margin-left: 150px;
+  }
+  
+  .imagecontainer img { 
+    width: 340px;
+    height: auto;
+    animation: fadeIn 0.5s ease;
+  }
+
+  .infocontainer {
+    margin-left: 0; 
+  }
+
+  .title {
+    font-size: 16px;
+    animation: fadeIn 0.1s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .myname {
+    font-size: 40px;
+    animation: fadeIn 0.2s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .course {
+    font-size: 24px;
+    margin-top: -10px;
+    animation: fadeIn 0.2s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .bio {
+    font-size: 14px;
+    width: 300px;
+    animation: fadeIn 0.3s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .resumeBtn {
+    font-size: 24px;
+    width: 150px;
+    height: auto;
+    animation: fadeIn 0.5s ease;
+    transition: transform 0.3s ease; 
+  }
+  
+  .resumeBtn:hover {
+    transform: scale(1.1); 
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .aboutcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagecontainer {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: none; 
+  }
+
+  .infocontainer {
+    margin-left: -60px; 
+    text-align: justify;
+  }
+
+  .title {
+    animation: fadeIn 0.1s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .myname {
+    animation: fadeIn 0.2s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .course {
+    animation: fadeIn 0.2s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .bio {
+    animation: fadeIn 0.3s ease;
+  transition: font-size 0.3s ease;
+  }
+
+  .resumeBtn {
+    animation: fadeIn 0.5s ease;
+    transition: transform 0.3s ease; 
+  }
+  
+  .resumeBtn:hover {
+    transform: scale(1.1); 
+  }
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
