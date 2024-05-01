@@ -1,0 +1,103 @@
+body {
+  background-color: #fe592b;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.bodyContainer {
+  background-color: #1E1E1E;
+  width: 1800px; 
+  height: 800px; 
+  border-radius: 34px;
+  margin-top: 100px;
+  position: relative;
+  overflow-x: auto; /* Add horizontal scrolling */
+}
+
+.myphoto {
+  width: 500px; 
+  height: auto; 
+  position: absolute; 
+  right: 300px; 
+}
+
+.titlename {
+  font-family: "Poppins";
+  font-size: 90px;
+  color: #f3f4e5;
+  position: relative;
+  top: 130px;
+  right: 300px;
+}
+
+.titleprogram {
+  font-family: "Poppins";
+  font-size: 45px;
+  color: #f3f4e5;
+  position: relative;
+  top: 110px;
+  right: 295px;
+}
+
+.biotext {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #f3f4e5;
+  position: relative;
+  text-align: left;
+  top: 125px;
+  right: 330px;
+  height: 100px;
+  width: 500px;
+}
+
+.resumeBtn {
+  font-family: "Poppins";
+  font-size: 48px;
+  background-color: #fe592b;
+  color: #1E1E1E;
+  border: none;
+  border-radius: 34px;
+  position: relative;
+  text-align: center;
+  top: 300px;
+  right: 350px;
+  width: 270px;
+  transition: all 0.3s ease;
+}
+
+
+.resumeBtn:hover {
+  transform: scale(1.1); /* Grow on hover */
+}
+
+header {
+  font-family: "Poppins";
+  font-size: 32px;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li:first-child {
+  margin-right: auto;
+}
+
+.navbar li {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.navbar a {
+  transition: font-size 0.3s ease; 
+}
+
+.navbar a:hover {
+  font-size: 40px;
+  transition: font-size 0.3s ease; 
+}
