@@ -105,9 +105,20 @@ header {
 .hicontainer p {
   color:#F3F4E5;
   font-size: 100px;
+  transition: font-size 0.3s ease;
+
 }
 
 .hicontainer span {
   color:#F3F4E5;
   font-size: 100px;
 }
+
+@media screen and (max-width: 767px) {
+  .hicontainer p{
+    font-size: 40px;
+    transition: font-size 0.3s ease;
+  }
+}
+
+/* END OF HI IM JULS CSS */
