@@ -1,103 +1,91 @@
 body {
-  background-color: #fe592b;
-  overflow-x: hidden; 
+  background-color: #1e1e1e;
 }
 
-.bodyContainer {
-  background-color: #1E1E1E;
-  width: 1800px; 
-  height: 800px; 
-  border-radius: 34px;
-  margin-top: 100px;
-  position: relative;
-  overflow-x: auto; 
-}
-
-.myphoto {
-  width: 500px; 
-  height: auto; 
-  position: absolute; 
-  right: 300px; 
-}
-
-.titlename {
-  font-family: "Poppins";
-  font-size: 90px;
-  color: #f3f4e5;
-  position: relative;
-  top: 130px;
-  right: 300px;
-}
-
-.titleprogram {
-  font-family: "Poppins";
-  font-size: 45px;
-  color: #f3f4e5;
-  position: relative;
-  top: 110px;
-  right: 295px;
-}
-
-.biotext {
-  font-family: "Poppins";
-  font-size: 24px;
-  color: #f3f4e5;
-  position: relative;
-  text-align: left;
-  top: 125px;
-  right: 330px;
-  height: 100px;
-  width: 500px;
-}
-
-.resumeBtn {
-  font-family: "Poppins";
-  font-size: 48px;
-  background-color: #fe592b;
-  color: #1E1E1E;
-  border: none;
-  border-radius: 34px;
-  position: relative;
-  text-align: center;
-  top: 300px;
-  right: 350px;
-  width: 270px;
-  transition: all 0.3s ease;
-}
-
-
-.resumeBtn:hover {
-  transform: scale(1.1); 
-}
+/* NAVBAR STYLING */
 
 header {
+  color: #F3F4E5;
   font-family: "Poppins";
-  font-size: 32px;
-  color: #1E1E1E;
-  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px; 
+}
+
+.name {
+  font-size: 28px;
+  transition: font-size 0.3s ease;
+}
+
+.links {
+  font-size: 24px;
+  transition: font-size 0.3s ease;
 }
 
 .navbar ul {
-  list-style: none;
-  font-weight: 800;
   display: flex;
-  justify-content: space-between;
-}
-
-.navbar ul li:first-child {
-  margin-right: auto;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
 }
 
 .navbar li {
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-top: 35px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navbar a {
-  transition: font-size 0.3s ease; 
+  text-decoration: none;
+  color: #F3F4E5;
+  transition: font-size 0.3s ease;
 }
 
 .navbar a:hover {
-  font-size: 40px;
-  transition: font-size 0.3s ease; 
+  font-size: 32px;
+  transition: font-size 0.3s ease;
+}
+
+@media screen and (min-width: 1060px) {
+  .navbar {
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    margin: 0 10px;
+  }
+
+  .name {
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+  }
+
+  .links {
+    font-size: 16px;
+    margin-top: 20px;
+    transition: font-size 0.3s ease;
+  }
+
+  .navbar a:hover{
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+  }
+
+  .navbar li {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

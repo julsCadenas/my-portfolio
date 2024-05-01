@@ -1,18 +1,19 @@
 
 const Header = () => {
     return (
-        <center>
-            <header class="headercontainer">
-                <div class="navbar">
-                    <ul>
-                        <li><a>Julian Cadenas</a></li>
-                        <li><a>About Me</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Contact Me</a></li>
-                    </ul>
-                </div>
-            </header>
-        </center>
+        <header class="headercontainer">
+            <div class="navbar">
+                <ul class="name">
+                    <li><a href="#">Julian Cadenas</a></li>
+                </ul>
+                <ul class="links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
     )
 }
 
