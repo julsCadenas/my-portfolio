@@ -6,7 +6,7 @@ const Juls = () => {
     const originalHiImText = "HI, IM ";
     const originalJulsText = "JULIAN";
 
-    useEffect(() => {
+    const startAnimation = () => {
         let hiImIndex = 0;
         let julsIndex = 0;
     
@@ -27,10 +27,20 @@ const Juls = () => {
         }, 100); 
     
         return () => clearInterval(intervalId);
+    };
+
+    useEffect(() => {
+        startAnimation();
     }, []);
 
+    const handleReplayAnimation = () => {
+        setDisplayHiImText('');
+        setDisplayJulsText('');
+        startAnimation();
+    };
+
     return (
-        <div className="hicontainer">
+        <div className="hicontainer" onClick={handleReplayAnimation}>
             <p data-text-value="HI, IM JULIAN">{displayHiImText}<strong>{displayJulsText}</strong></p>
         </div>
     );
