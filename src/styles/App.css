@@ -1,6 +1,6 @@
 body {
   background-color: #fe592b;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 .bodyContainer {
@@ -10,7 +10,7 @@ body {
   border-radius: 34px;
   margin-top: 100px;
   position: relative;
-  overflow-x: auto; /* Add horizontal scrolling */
+  overflow-x: auto; 
 }
 
 .myphoto {
@@ -67,7 +67,7 @@ body {
 
 
 .resumeBtn:hover {
-  transform: scale(1.1); /* Grow on hover */
+  transform: scale(1.1); 
 }
 
 header {
