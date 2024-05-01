@@ -89,3 +89,25 @@ header {
     margin-right: 10px;
   }
 }
+
+/* END OF NAVBAR CSS */
+
+
+/* HI IM JULS CSS */
+
+.hicontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.hicontainer p {
+  color:#F3F4E5;
+  font-size: 100px;
+}
+
+.hicontainer span {
+  color:#F3F4E5;
+  font-size: 100px;
+}
