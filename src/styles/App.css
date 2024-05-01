@@ -110,6 +110,10 @@ header {
   transition: font-size 0.3s ease;
 }
 
+.hicontainer p:hover {
+  font-size: 120px;
+}
+
 .hicontainer span {
   color:#F3F4E5;
   font-size: 100px;
@@ -170,6 +174,11 @@ header {
   font-weight: bold;
   animation: fadeIn 0.3s ease;
   transition: font-size 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.myname:hover {
+  transform: scale(1.1);
 }
 
 .course {
@@ -236,6 +245,7 @@ header {
     font-size: 40px;
     animation: fadeIn 0.2s ease;
   transition: font-size 0.3s ease;
+  transition: transform 0.3s ease;
   }
 
   .course {
@@ -291,6 +301,7 @@ header {
   .myname {
     animation: fadeIn 0.2s ease;
   transition: font-size 0.3s ease;
+  transition: transform 0.3s ease;
   }
 
   .course {
@@ -309,7 +320,7 @@ header {
   }
   
   .resumeBtn:hover {
-    transform: scale(1.1); 
+    transform: scale(1.3); 
   }
 
 }
