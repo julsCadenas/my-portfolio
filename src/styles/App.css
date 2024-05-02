@@ -435,3 +435,123 @@ a.toggle:hover {
 }
 
 /* END OF SKILLS CSS */
+
+
+/* PROJECTS CSS */
+
+.projcontainer {
+  margin-top: 100px; 
+  margin-bottom: 100px; 
+  text-align: center;
+  justify-content: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.projtitle {
+  color: var(--fontcolor);
+  font-size: 40px;
+  font-family: "Poppins";
+}
+
+.gwacalc {
+  width: 100%; 
+  max-width: 700px;
+  height: 400px;
+  background-color: var(--fontcolor);
+  border-radius: 34px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gwatitle {
+  font-family: "Poppins";
+  color: var(--fontcolor);
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon-wrapper {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0;
+}
+
+.icon-wrapper a {
+  text-decoration: none;
+}
+
+.icon-wrapper i {
+  font-size: 200px;
+  color: var(--backgroundcolor);
+}
+
+.gwacalc:hover .icon-wrapper{
+  opacity: 1;
+}
+
+.gwacalc:hover img{
+  opacity: 0;
+}
+
+.gwacalc img {
+  width: 100%; 
+  height: 100%;
+  border-radius: 34px;
+  border: 4px solid #1e1e1e;
+  object-fit: cover;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px; 
+}
+
+.project {
+  width: calc(50% - 20px); 
+  max-width: 700px; 
+  text-align: center;
+  margin: 20px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .gwacalc {
+    width: 100%; 
+    max-width: 500px;
+    height: 300px;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gwacalc {
+    width: 100%; 
+    max-width: 300px; 
+    height: 100px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  .icon-wrapper i {
+    font-size: 80px;
+  }
+  .projtitle {
+    font-size: 24px;
+  }
+  .gwatitle {
+    font-size: 17px;
+  }
+  .project {
+    margin-top: -15px;
+  }
+}
