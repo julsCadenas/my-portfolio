@@ -121,7 +121,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .hicontainer p{
-    font-size: 64px;
+    font-size: 70px;
     text-align: center;
     transition: font-size 0.3s ease;
   }
@@ -242,7 +242,7 @@ header {
   }
 
   .title {
-    font-size: 16px;
+    font-size: 20px;
     animation: fadeIn 0.1s ease;
   transition: font-size 0.3s ease;
   }
@@ -362,7 +362,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  justify-content: center; 
   font-size: 120px;
   color:  #F3F4E5;
   max-width: 1100px; 
@@ -371,11 +371,31 @@ header {
 
 .iconscontainer i {
   margin: 30px;
+  transition: font-size 0.3s ease;
 }
+
 
 .devicon-cplusplus-plain {
   color: #F3F4E5;
 }
 
+.iconscontainer i:hover {
+  font-size: 140px;
+  transition: font-size 0.3s ease;
+}
 
+@media screen and (max-width: 767px) { 
+  .skillstitle {
+    font-size: 24px;
+  }
 
+  .iconscontainer {
+    font-size: 60px;
+  }
+
+  .iconscontainer i:hover {
+    font-size: 80px;
+    transition: font-size 0.3s ease; 
+  }
+
+}
