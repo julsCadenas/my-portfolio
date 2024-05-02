@@ -67,6 +67,13 @@ header {
   transition: font-size 0.3s ease;
 }
 
+a.toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  width: 50px;
+  height: auto;
+}
 
 
 @media screen and (min-width: 1070px) {
@@ -103,6 +110,14 @@ header {
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .toggle {
+    position: fixed; 
+    bottom: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    margin-top: 20px; 
   }
 }
 

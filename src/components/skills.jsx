@@ -1,7 +1,7 @@
 
 const Skills = () => {
     return (
-        <div className="skillscontainer" id="skills">
+        <div id="skills" className="skillscontainer">
             <div className="skillstitle">
                 <p><strong>Skills & Tools</strong></p>
             </div>
@@ -15,9 +15,12 @@ const Skills = () => {
                 <i class="devicon-php-plain"></i>
                 <i class="devicon-amazonwebservices-plain-wordmark"></i>
                 <i class="devicon-react-original"></i>
+                <i class="devicon-arduino-plain"></i>
                 <i class="devicon-git-plain"></i>
+                <i class="devicon-github-original"></i>
                 <i class="devicon-sqldeveloper-plain"></i>
                 <i class="devicon-sqlite-plain"></i>
+                <i class="devicon-bash-plain"></i>
             </div>
         </div>
     )
