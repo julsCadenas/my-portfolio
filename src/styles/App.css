@@ -75,6 +75,10 @@ a.toggle {
   height: auto;
 }
 
+a.toggle:hover {
+  width: 60px;
+  height: auto;
+}
 
 @media screen and (min-width: 1070px) {
   .navbar {
