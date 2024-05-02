@@ -1,11 +1,25 @@
+:root {
+  --backgroundcolor: #1e1e1e;
+  --fontcolor: #F3F4E5; 
+}
+
 body {
-  background-color: #1e1e1e;
+  background-color: var(--backgroundcolor);
+}
+
+[data-theme="light"] {
+  --backgroundcolor: #F3F4E5;
+  --fontcolor: #1E1E1E;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }
 
 /* NAVBAR STYLING */
 
 header {
-  color: #F3F4E5;
+  color: var(--fontcolor);
   font-family: "Poppins";
   font-weight: bold;
 }
@@ -44,7 +58,7 @@ header {
 
 .navbar a {
   text-decoration: none;
-  color: #F3F4E5;
+  color: var(--fontcolor);
   transition: font-size 0.3s ease;
 }
 
@@ -53,7 +67,9 @@ header {
   transition: font-size 0.3s ease;
 }
 
-@media screen and (min-width: 1060px) {
+
+
+@media screen and (min-width: 1070px) {
   .navbar {
     flex-direction: row; 
     justify-content: space-between;
@@ -105,7 +121,7 @@ header {
 }
 
 .hicontainer p {
-  color:#F3F4E5;
+  color: var(--fontcolor);
   font-size: 100px;
   transition: font-size 0.3s ease;
 }
@@ -115,7 +131,7 @@ header {
 }
 
 .hicontainer span {
-  color:#F3F4E5;
+  color: var(--fontcolor);
   font-size: 100px;
 }
 
@@ -139,7 +155,7 @@ header {
 
 .aboutcontainer {
   font-family: "Poppins";
-  color: #F3F4E5;
+  color: var(--fontcolor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,8 +220,8 @@ header {
 }
 
 .resumeBtn {
-  background-color: #F3F4E5;
-  color: #1e1e1e;
+  background-color: var(--fontcolor);
+  color: var(--backgroundcolor);
   font-family: "Poppins";
   font-weight: bold;
   font-size: 50px;
@@ -354,7 +370,7 @@ header {
 }
 
 .skillstitle {
-  color: #F3F4E5;
+  color: var(--fontcolor);
   font-size: 40px;
 }
 
@@ -364,7 +380,7 @@ header {
   text-align: center;
   justify-content: center; 
   font-size: 120px;
-  color:  #F3F4E5;
+  color: var(--fontcolor);
   max-width: 1100px; 
   margin: 0 auto; 
 }
@@ -374,9 +390,8 @@ header {
   transition: font-size 0.3s ease;
 }
 
-
 .devicon-cplusplus-plain {
-  color: #F3F4E5;
+  color: var(--fontcolor);
 }
 
 .iconscontainer i:hover {
@@ -399,3 +414,5 @@ header {
   }
 
 }
+
+/* END OF SKILLS CSS */

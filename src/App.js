@@ -4,7 +4,9 @@ import Juls from './components/juls'
 import About from './components/about'
 import Skills from './components/skills'
 
+
 function App() {
+
   return (
     <>
       <Header />
