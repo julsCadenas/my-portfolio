@@ -3,7 +3,7 @@ const Skills = () => {
     return (
         <div className="skillscontainer">
             <div className="skillstitle">
-                <p><strong>Skills</strong></p>
+                <p><strong>Skills & Tools</strong></p>
             </div>
             <div className="iconscontainer">
                 <i class="devicon-cplusplus-plain"></i>
