@@ -43,7 +43,7 @@ const Header = () => {
                     <li><a href="#" onClick={() => scrollToSection('about')}>About</a></li>
                     <li><a href="#" onClick={() => scrollToSection('skills')}>Skills</a></li>
                     <li><a href="#" onClick={() => scrollToSection('projects')}>Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onClick={() => scrollToSection('footer')}>Contact</a></li>
                 </ul>
             </div>
         <a className="toggle" onClick={toggleMode} defaultChecked={selectedTheme === "dark"}><SunMoon style={{ width: '100%', height: '100%' }} /></a>

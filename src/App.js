@@ -4,6 +4,7 @@ import Juls from './components/juls'
 import About from './components/about'
 import Skills from './components/skills'
 import Proj  from './components/projects';
+import Footer from './components/footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Proj />
+      <Footer />
     </>
   );
 }
