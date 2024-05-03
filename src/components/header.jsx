@@ -37,7 +37,7 @@ const Header = () => {
         <header class="headercontainer">
             <div class="navbar">
                 <ul class="name">
-                    <li><a href="#">Julian Cadenas</a></li>
+                    <li><a href="#" onClick={() => scrollToSection('about')}>Julian Cadenas</a></li>
                 </ul>
                 <ul class="links">
                     <li><a href="#" onClick={() => scrollToSection('about')}>About</a></li>
