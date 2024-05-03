@@ -778,3 +778,7 @@ a.toggle:hover {
 .uparrow span:hover {
   font-size: 130px;
 }
+
+html, body { 
+  scroll-behavior: smooth
+}
