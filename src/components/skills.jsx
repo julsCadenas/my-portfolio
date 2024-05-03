@@ -12,20 +12,22 @@ const Skills = () => {
         },
         [`& .${tooltipClasses.tooltip}`]: {
             backgroundColor: '#1E1E1E',
-            color: '#F3F4E5', 
-            fontSize: '16px', 
-            borderRadius: '8px', 
-            padding: '8px 16px', 
+            color: '#F3F4E5',
+            fontSize: '16px',
+            borderRadius: '8px',
+            padding: '8px 16px',
+            transition: 'none', 
         },
     }));
-
+    
+        
     return (
         <div id="skills" className="skillscontainer">
             <div className="skillstitle">
                 <p><strong>Skills & Tools</strong></p>
             </div>
             <div className="iconscontainer">
-            <BootstrapTooltip title="C++">
+                <BootstrapTooltip title="C++" >
                     <i className="devicon-cplusplus-plain"></i>
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Python">

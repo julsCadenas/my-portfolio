@@ -27,6 +27,10 @@ const About = () => {
         startAnimation();
     };
 
+    const click2 = () => {
+        alert('My resume is currently unavailable');
+    }
+
     const bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     return (
@@ -36,7 +40,7 @@ const About = () => {
                 <div className='myname' onClick={startAnimation}>{displayText || originalText}</div>
                 <div className='course'>BS Computer Engineering</div>
                 <div className='bio'>{bio}</div>
-                <button class="resumeBtn">RESUME</button>
+                <button class="resumeBtn" onClick={() => click2()}>RESUME</button>
             </div>
             <div className='imagecontainer'>
                 <img src={myphoto}/>

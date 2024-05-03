@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 const Footer = () => {
     const [displayText, setDisplayText] = useState('');
@@ -21,20 +23,46 @@ const Footer = () => {
         return () => clearInterval(intervalId);
     };
 
+    const copyEmailToClipboard = () => {
+        navigator.clipboard.writeText(originalText).then(() => {
+        }).catch((error) => {
+            console.error('Failed to copy email: ', error);
+        });
+    };
+
     const handleNameClick = () => {
         startAnimation();
+        copyEmailToClipboard();
     };
+
+    const BootstrapTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} arrow classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.arrow}`]: {
+            color: '#1E1E1E',
+        },
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#1E1E1E',
+            color: '#F3F4E5', 
+            fontSize: '16px', 
+            borderRadius: '8px', 
+            padding: '8px 16px', 
+        },
+    }));
+
     return (
         <footer className="footercontainer" id="footer">
             <p className="contacttitle"><strong>Contact Me:</strong></p>
             <div className="contacticons">
-                <a href="https://github.com/julsCadenas"><i class="devicon-github-original"></i></a>  
-                <a href="https://www.linkedin.com/in/Julian-Cadenas/"><i class="devicon-linkedin-plain"></i></a>
-                <a href="https://github.com/julsCadenas"><span class="material-symbols-outlined">mail</span></a>
+                <a href="https://github.com/julsCadenas" target='_blank'><i className="devicon-github-original"></i></a>  
+                <a href="https://www.linkedin.com/in/Julian-Cadenas/" target='_blank'><i className="devicon-linkedin-plain"></i></a>
+                <a href="mailto:jscadenas12@gmail.com" target='_blank'><span className="material-symbols-outlined">mail</span></a>
             </div>
-            <p className="email" onClick={startAnimation}><strong>{displayText || originalText}</strong></p>
+            <BootstrapTooltip title="Click to copy">
+                <p className="email" onClick={handleNameClick}><strong>{displayText || originalText}</strong></p>
+            </BootstrapTooltip>
         </footer>
-    )
-}
+    );
+};
 
 export default Footer;
