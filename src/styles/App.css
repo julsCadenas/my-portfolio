@@ -764,3 +764,17 @@ a.toggle:hover {
     font-size: 90px;
   }
 }
+
+.uparrow {
+  color: var(--fontcolor);
+  margin-top: 50px;
+}
+
+.uparrow span {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.uparrow span:hover {
+  font-size: 130px;
+}

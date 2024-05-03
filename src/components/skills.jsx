@@ -19,15 +19,14 @@ const Skills = () => {
             transition: 'none', 
         },
     }));
-    
-        
+
     return (
         <div id="skills" className="skillscontainer">
             <div className="skillstitle">
                 <p><strong>Skills & Tools</strong></p>
             </div>
             <div className="iconscontainer">
-                <BootstrapTooltip title="C++" >
+                <BootstrapTooltip title="C++">
                     <i className="devicon-cplusplus-plain"></i>
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Python">

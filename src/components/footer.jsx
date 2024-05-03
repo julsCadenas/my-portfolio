@@ -50,6 +50,25 @@ const Footer = () => {
         },
     }));
 
+    const [BackToTopButton, setBackToTopButton] = useState(false)
+
+    useEffect(() =>{
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 100){
+                setBackToTopButton(true)
+            } else {
+                setBackToTopButton(false)
+            }
+        })
+    },[]);
+
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    }
+    
     return (
         <footer className="footercontainer" id="footer">
             <p className="contacttitle"><strong>Contact Me:</strong></p>
@@ -61,6 +80,7 @@ const Footer = () => {
             <BootstrapTooltip title="Click to copy">
                 <p className="email" onClick={handleNameClick}><strong>{displayText || originalText}</strong></p>
             </BootstrapTooltip>
+            <a href="#" onClick={scrollUp} className='uparrow'><span class="material-symbols-outlined">keyboard_arrow_up</span></a>
         </footer>
     );
 };

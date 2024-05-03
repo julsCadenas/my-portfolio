@@ -34,7 +34,7 @@ const Header = () => {
     }
 
     return (
-        <header class="headercontainer">
+        <header class="headercontainer" id="header">
             <div class="navbar">
                 <ul class="name">
                     <li><a href="#" onClick={() => scrollToSection('about')}>Julian Cadenas</a></li>
