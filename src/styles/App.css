@@ -95,18 +95,18 @@ a.toggle:hover {
   }
 
   .name {
-    font-size: 18px;
+    font-size: 28px;
     transition: font-size 0.3s ease;
   }
 
   .links {
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 20px;
     transition: font-size 0.3s ease;
   }
 
   .navbar a:hover{
-    font-size: 24px;
+    font-size: 32px;
     transition: font-size 0.3s ease;
   }
 
