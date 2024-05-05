@@ -71,6 +71,9 @@ const Skills = () => {
                 <BootstrapTooltip title="Bash">
                     <i className="devicon-bash-plain"></i>
                 </BootstrapTooltip>
+                <BootstrapTooltip title="Figma">
+                    <i class="devicon-figma-plain"></i>
+                </BootstrapTooltip>
             </div>
         </div>
     )
