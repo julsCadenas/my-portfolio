@@ -72,7 +72,7 @@ const Skills = () => {
                     <i className="devicon-bash-plain"></i>
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Figma">
-                    <i class="devicon-figma-plain"></i>
+                    <i className="devicon-figma-plain"></i>
                 </BootstrapTooltip>
             </div>
         </div>
