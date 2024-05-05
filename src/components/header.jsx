@@ -3,7 +3,8 @@ import { SunMoon } from 'lucide-react';
 
 const Header = () => {
 
-    const scrollToSection = (id) => {
+    const scrollToSection = (id, event) => {
+        event.preventDefault();
         const element = document.getElementById(id);
         const offset = 75;
         const offsetPosition = element.offsetTop - offset;
@@ -37,13 +38,13 @@ const Header = () => {
         <header class="headercontainer" id="header">
             <div class="navbar">
                 <ul class="name">
-                    <li><a href="#" onClick={() => scrollToSection('about')}>Julian Cadenas</a></li>
+                    <li><a href="#" onClick={(e) => scrollToSection('about', e)}>Julian Cadenas</a></li>
                 </ul>
                 <ul class="links">
-                    <li><a href="#" onClick={() => scrollToSection('about')}>About</a></li>
-                    <li><a href="#" onClick={() => scrollToSection('skills')}>Skills</a></li>
-                    <li><a href="#" onClick={() => scrollToSection('projects')}>Projects</a></li>
-                    <li><a href="#" onClick={() => scrollToSection('footer')}>Contact</a></li>
+                    <li><a href="#" onClick={(e) => scrollToSection('about', e)}>About</a></li>
+                    <li><a href="#" onClick={(e) => scrollToSection('skills', e)}>Skills</a></li>
+                    <li><a href="#" onClick={(e) => scrollToSection('projects', e)}>Projects</a></li>
+                    <li><a href="#" onClick={(e) => scrollToSection('footer', e)}>Contact</a></li>
                 </ul>
             </div>
         <a className="toggle" onClick={toggleMode} defaultChecked={selectedTheme === "dark"}><SunMoon style={{ width: '100%', height: '100%' }} /></a>
