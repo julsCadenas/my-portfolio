@@ -46,7 +46,7 @@ const Proj = () => {
                     </a>
                 </div>
                 <div className='project'>
-                    <div className='gwatitle'><strong>Anime Finder (WIP)</strong></div>
+                    <div className='gwatitle'><strong>Anime Finder</strong></div>
                     <a href='https://find-anime.vercel.app/' target='_blank' className="gwacalc">
                         <div className="icon-wrapper">
                             <i className="devicon-github-original"></i>
