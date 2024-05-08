@@ -782,3 +782,16 @@ a.toggle:hover {
 html, body { 
   scroll-behavior: smooth
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--backgroundcolor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fontcolor);
+  border-radius: 16px;
+}
