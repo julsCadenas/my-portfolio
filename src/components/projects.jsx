@@ -3,6 +3,7 @@ import aaipsd from '../images/aaipsd.png';
 import icare from '../images/icare.png';
 import lrt from '../images/lrt.png'; 
 import hibike from '../images/hibike.png'
+import clock from '../images/clock.png'
 
 const Proj = () => {
     return (
@@ -52,6 +53,15 @@ const Proj = () => {
                             <i className="devicon-github-original"></i>
                         </div>
                         <img src={hibike} alt="Anime Finder"></img>
+                    </a>
+                </div>
+                <div className='project'>
+                    <div className='gwatitle'><strong>Clock Extension</strong></div>
+                    <a href='https://github.com/julsCadenas/clockhome' target='_blank' className="gwacalc">
+                        <div className="icon-wrapper">
+                            <i className="devicon-github-original"></i>
+                        </div>
+                        <img src={clock} alt="clock extension"></img>
                     </a>
                 </div>
             </div>
