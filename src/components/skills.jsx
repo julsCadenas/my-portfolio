@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 const Skills = () => {
-    
     const BootstrapTooltip = styled(({ className, ...props }) => (
         <Tooltip {...props} arrow classes={{ popper: className }} />
     ))(({ theme }) => ({
@@ -73,6 +72,9 @@ const Skills = () => {
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Figma">
                     <i className="devicon-figma-plain"></i>
+                </BootstrapTooltip>
+                <BootstrapTooltip title="Firebase">
+                    <i className="devicon-firebase-plain"></i>
                 </BootstrapTooltip>
             </div>
         </div>
