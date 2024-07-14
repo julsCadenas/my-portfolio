@@ -4,6 +4,7 @@ import icare from '../images/icare.png';
 import lrt from '../images/lrt.png'; 
 import hibike from '../images/hibike.png'
 import clock from '../images/clock.png'
+import fitlib from '../images/fitlibrary.png'
 
 const Proj = () => {
     return (
@@ -62,6 +63,15 @@ const Proj = () => {
                             <i className="devicon-github-original"></i>
                         </div>
                         <img src={clock} alt="clock extension"></img>
+                    </a>
+                </div>
+                <div className='project'>
+                    <div className='gwatitle'><strong>FEU Tech Library</strong></div>
+                    <a href='https://github.com/julsCadenas/fitlib' target='_blank' className="gwacalc">
+                        <div className="icon-wrapper">
+                            <i className="devicon-github-original"></i>
+                        </div>
+                        <img src={fitlib} alt="clock extension"></img>
                     </a>
                 </div>
             </div>
