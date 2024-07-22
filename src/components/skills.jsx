@@ -52,6 +52,9 @@ const Skills = () => {
                 <BootstrapTooltip title="React">
                     <i className="devicon-react-original"></i>
                 </BootstrapTooltip>
+                <BootstrapTooltip title="Node JS">
+                    <i className="devicon-nodejs-plain"></i>
+                </BootstrapTooltip>
                 <BootstrapTooltip title="Arduino">
                     <i className="devicon-arduino-plain"></i>
                 </BootstrapTooltip>
