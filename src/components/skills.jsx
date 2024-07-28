@@ -79,6 +79,15 @@ const Skills = () => {
                 <BootstrapTooltip title="Firebase">
                     <i className="devicon-firebase-plain"></i>
                 </BootstrapTooltip>
+                <BootstrapTooltip title="Tailwind">
+                    <i className="devicon-tailwindcss-original"></i>
+                </BootstrapTooltip>
+                <BootstrapTooltip title="Tensorflow">
+                    <i className="devicon-tensorflow-original"></i>
+                </BootstrapTooltip>
+                <BootstrapTooltip title="OpenCV">
+                    <i className="devicon-opencv-plain"></i>
+                </BootstrapTooltip>
             </div>
         </div>
     )
