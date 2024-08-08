@@ -40,8 +40,14 @@ const Juls = () => {
     };
 
     return (
-        <div className="hicontainer" onClick={handleReplayAnimation}>
-            <p data-text-value="HI, IM JULIAN">{displayHiImText}<strong>{displayJulsText}</strong></p>
+        <div 
+            className="flex justify-center items-center h-screen bg-black text-white -mt-32 font-Poppins"
+            onClick={handleReplayAnimation}
+        >
+            <p className="text-7xl md:text-8xl flex items-center flex-col md:flex-row space-x-0 md:space-x-6">
+                <span>{displayHiImText}</span>
+                <span className="ml-2 font-bold">{displayJulsText}</span>
+            </p>
         </div>
     );
 }
