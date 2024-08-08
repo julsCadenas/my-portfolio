@@ -33,7 +33,7 @@ const About = () => {
     return (
         <div className="flex flex-col md:flex-row justify-center items-center bg-black text-white font-Poppins py-80">
             <div className='md:order-2 flex-shrink-0'>
-                <img className='w-64 lg:w-[500px] h-auto md:my-0 my-5' src={myphoto} alt="My Photo" />
+                <img className='w-64  lg:w-[500px] h-auto md:my-0 my-5' src={myphoto} alt="My Photo" />
             </div>
             <div className='md:order-1 text-left px-7 md:px-0 ml-0 md:ml-5'>
                 <div className='font-bold text-2xl lg:text-4xl pb-3 text-left' id='about'>About Me</div>
