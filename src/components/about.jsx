@@ -31,9 +31,9 @@ const About = () => {
     const bio2 = "Currently pursuing a Bachelor's degree in Computer Engineering at Far Eastern University - Institute of Technology, I am a driven individual with a passion for software development. As a Scholar, I maintain a specific GPA every trimester, showcasing my dedication to academic excellence."
 
     return (
-        <div className="h-screen flex flex-col md:flex-row justify-center items-center bg-black text-white font-Poppins">
+        <div className="h-screen flex flex-col md:flex-row justify-center items-center bg-black text-white font-Poppins py-28">
             <div className='md:order-2 flex-shrink-0'>
-                <img className='w-64  cmd:w-[500px] h-auto md:my-0 my-5' src={myphoto} alt="My Photo" />
+                <img className='w-64 cmd:w-[500px] h-auto md:my-0 my-5' id='about' src={myphoto} alt="My Photo" />
             </div>
             <div className='md:order-1 text-left px-7 md:px-0 ml-0 md:ml-5 flex-shrink-0'>
                 <div className='font-bold text-2xl cmd:text-4xl pb-3 text-left' id='about'>About Me</div>

@@ -20,7 +20,7 @@ const Skills = () => {
     }));
 
     return (
-        <div id="skills" className="max-h-fit pt-36 font-Poppins text-white bg-black flex flex-col justify-center items-center">
+        <div id="skills" className="max-h-fit py-48 font-Poppins text-white bg-black flex flex-col justify-center items-center">
             <div className="text-2xl md:text-4xl mb-14 md:mb-20">
                 <p><strong>Skills & Tools</strong></p>
             </div>
