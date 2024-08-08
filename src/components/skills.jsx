@@ -20,11 +20,11 @@ const Skills = () => {
     }));
 
     return (
-        <div id="skills" className="font-Poppins text-white bg-black flex flex-col justify-center items-center pt-72">
-            <div className="text-4xl mb-16">
+        <div id="skills" className="font-Poppins text-white bg-black flex flex-col justify-center items-center py-80">
+            <div className="text-2xl md:text-4xl mb-14 md:mb-20">
                 <p><strong>Skills & Tools</strong></p>
             </div>
-            <div className="flex flex-wrap justify-center gap-10 text-9xl px-80">
+            <div className="flex flex-wrap justify-center gap-10 text-7xl md:text-8xl md:text-9xl px-5 lg:px-80">
                 <BootstrapTooltip title="C++">
                     <i className="devicon-cplusplus-plain transition-transform duration-300 ease-in-out transform hover:scale-125"></i>
                 </BootstrapTooltip>
