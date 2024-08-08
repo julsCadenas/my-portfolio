@@ -2,3 +2,8 @@
     scrollbar-width: thin; 
     scrollbar-color: #F3F4E5 #1e1e1e; 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+  

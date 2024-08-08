@@ -31,17 +31,17 @@ const About = () => {
     const bio2 = "Currently pursuing a Bachelor's degree in Computer Engineering at Far Eastern University - Institute of Technology, I am a driven individual with a passion for software development. As a Scholar, I maintain a specific GPA every trimester, showcasing my dedication to academic excellence."
 
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center bg-black text-white font-Poppins py-80">
+        <div className="h-screen flex flex-col md:flex-row justify-center items-center bg-black text-white font-Poppins">
             <div className='md:order-2 flex-shrink-0'>
-                <img className='w-64  lg:w-[500px] h-auto md:my-0 my-5' src={myphoto} alt="My Photo" />
+                <img className='w-64  cmd:w-[500px] h-auto md:my-0 my-5' src={myphoto} alt="My Photo" />
             </div>
-            <div className='md:order-1 text-left px-7 md:px-0 ml-0 md:ml-5'>
-                <div className='font-bold text-2xl lg:text-4xl pb-3 text-left' id='about'>About Me</div>
-                <div className='font-bold text-4xl lg:text-7xl pb-3 hover:scale-110 transition-all' onClick={startAnimation}>{displayText || originalText}</div>
-                <div className='font-bold text-2xl lg:text-5xl pb-4'>BS Computer Engineering</div>
-                <div className='text-lg lg:text-2xl w-80 lg:w-[600px] text-justify md:text-left'>{bio2}</div>
+            <div className='md:order-1 text-left px-7 md:px-0 ml-0 md:ml-5 flex-shrink-0'>
+                <div className='font-bold text-2xl cmd:text-4xl pb-3 text-left' id='about'>About Me</div>
+                <div className='font-bold text-4xl cmd:text-7xl pb-3 hover:scale-110 transition-all' onClick={startAnimation}>{displayText || originalText}</div>
+                <div className='font-bold text-2xl cmd:text-5xl pb-4'>BS Computer Engineering</div>
+                <div className='text-lg cmd:text-2xl w-80 cmd:w-[600px] text-justify md:text-left'>{bio2}</div>
                 <a href={resume} download='Julian-Sebastian-Cadenas-Resume.pdf'>
-                    <button className="bg-white text-black rounded-2xl lg:rounded-3xl font-bold w-44 lg:w-64 h-11 lg:h-16 text-3xl lg:text-5xl mt-5 transition-transform transform hover:scale-110">RESUME</button>
+                    <button className="bg-white text-black rounded-2xl cmd:rounded-3xl font-bold w-44 cmd:w-64 h-11 cmd:h-16 text-3xl cmd:text-5xl mt-5 transition-transform transform hover:scale-110">RESUME</button>
                 </a>
             </div>
         </div>

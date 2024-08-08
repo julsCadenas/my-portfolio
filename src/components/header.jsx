@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { SunMoon } from 'lucide-react';
 
 const Header = () => {
-    const scrollToSection = (id, event) => {
+    const scrollToSection = (id, event,) => {
         event.preventDefault();
         const element = document.getElementById(id);
-        const offset = 75;
+        const offset = 20;
         const offsetPosition = element.offsetTop - offset;
     
         window.scrollTo({
