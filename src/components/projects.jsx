@@ -2,7 +2,7 @@ import gwacalc from '../images/gwacalc.png';
 import aaipsd from '../images/aaipsd.png';
 import icare from '../images/icare.png';
 import lrt from '../images/lrt.png'; 
-import hibike from '../images/hibike.png'
+import anifind from '../images/anifind.png'
 import clock from '../images/clock.png'
 import fitlib from '../images/fitlibrary.png'
 
@@ -49,11 +49,11 @@ const Proj = () => {
                 </div>
                 <div className='project'>
                     <div className='gwatitle'><strong>Anime Finder</strong></div>
-                    <a href='https://find-anime.vercel.app/' target='_blank' className="gwacalc">
+                    <a href='https://myanifinder.vercel.app/' target='_blank' className="gwacalc">
                         <div className="icon-wrapper">
                             <i className="devicon-github-original"></i>
                         </div>
-                        <img src={hibike} alt="Anime Finder"></img>
+                        <img src={anifind} alt="Anime Finder"></img>
                     </a>
                 </div>
                 <div className='project'>

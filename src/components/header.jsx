@@ -35,12 +35,12 @@ const Header = () => {
     }
 
     return (
-        <header class="headercontainer" id="header">
-            <div class="navbar">
-                <ul class="name">
+        <header className="headercontainer" id="header">
+            <div className="navbar">
+                <ul className="name">
                     <li><a href="#" onClick={(e) => scrollToSection('about', e)}>Julian Cadenas</a></li>
                 </ul>
-                <ul class="links">
+                <ul className="links">
                     <li><a href="#" onClick={(e) => scrollToSection('about', e)}>About</a></li>
                     <li><a href="#" onClick={(e) => scrollToSection('skills', e)}>Skills</a></li>
                     <li><a href="#" onClick={(e) => scrollToSection('projects', e)}>Projects</a></li>

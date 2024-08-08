@@ -80,7 +80,7 @@ const Footer = () => {
             <BootstrapTooltip title="Click to copy">
                 <p className="email" onClick={handleNameClick}><strong>{displayText || originalText}</strong></p>
             </BootstrapTooltip>
-            <a href="#" onClick={scrollUp} className='uparrow'><span class="material-symbols-outlined">keyboard_arrow_up</span></a>
+            <a href="#" onClick={scrollUp} className='uparrow'><span className="material-symbols-outlined">keyboard_arrow_up</span></a>
         </footer>
     );
 };

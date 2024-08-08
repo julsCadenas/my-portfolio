@@ -31,14 +31,14 @@ const About = () => {
     const bio2 = "Currently pursuing a Bachelor's degree in Computer Engineering at Far Eastern University - Institute of Technology, I am a driven individual with a passion for software development. As a Scholar, I maintain a specific GPA every trimester, showcasing my dedication to academic excellence."
 
     return (
-        <div class="aboutcontainer">
+        <div className="aboutcontainer">
             <div className='infocontainer'>
                 <div className='title' id='about'>About Me</div>
                 <div className='myname' onClick={startAnimation}>{displayText || originalText}</div>
                 <div className='course'>BS Computer Engineering</div>
                 <div className='bio'>{bio2}</div>
                 <a href={resume} download='Julian-Sebastian-Cadenas-Resume.pdf'>
-                    <button class="resumeBtn">RESUME</button>
+                    <button className="resumeBtn">RESUME</button>
                 </a>
             </div>
             <div className='imagecontainer'>
