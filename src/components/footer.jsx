@@ -70,17 +70,19 @@ const Footer = () => {
     }
     
     return (
-        <footer className="footercontainer" id="footer">
-            <p className="contacttitle"><strong>Contact Me:</strong></p>
-            <div className="contacticons">
-                <a href="https://github.com/julsCadenas" target='_blank'><i className="devicon-github-original"></i></a>  
-                <a href="https://www.linkedin.com/in/Julian-Cadenas/" target='_blank'><i className="devicon-linkedin-plain"></i></a>
-                <a href="mailto:jscadenas12@gmail.com" target='_blank'><span className="material-symbols-outlined">mail</span></a>
+        <footer className="h-screen flex justify-center items-center flex-col bg-white text-black dark:bg-black dark:text-white font-Poppins space-y-1 " id="footer">
+            <p className="text-5xl lg:text-8xl"><strong>Contact Me:</strong></p>
+            <div className="flex items-center space-x-3 lg:space-x-5 text-7xl lg:text-9xl">
+                <a className='hover:scale-110 transition-all' href="https://github.com/julsCadenas" target='_blank' rel="noreferrer" ><i className="devicon-github-original"></i></a>  
+                <a className='hover:scale-110 transition-all' href="https://www.linkedin.com/in/Julian-Cadenas/" target='_blank' rel="noreferrer" ><i className="devicon-linkedin-plain "></i></a>
+                <a href="mailto:jscadenas12@gmail.com" target='_blank' rel="noreferrer"><span className="material-symbols-outlined text-8xl lg:text-[160px] font-semibold hover:scale-110 transition-all">mail</span></a>
             </div>
             <BootstrapTooltip title="Click to copy">
-                <p className="email" onClick={handleNameClick}><strong>{displayText || originalText}</strong></p>
+                <p className="text-2xl md:text-4xl cursor-pointer" onClick={handleNameClick}><strong>{displayText || originalText}</strong></p>
             </BootstrapTooltip>
-            <a href="#" onClick={scrollUp} className='uparrow'><span className="material-symbols-outlined">keyboard_arrow_up</span></a>
+            { BackToTopButton && (
+                <p onClick={scrollUp} className='cursor-pointer'><span className="material-symbols-outlined text-7xl lg:text-9xl font-bold mt-5 hover:scale-125 transition-all">keyboard_arrow_up</span></p>
+            )}
         </footer>
     );
 };
