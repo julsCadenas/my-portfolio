@@ -3,7 +3,7 @@ import Header from './components/header'
 import Juls from './components/juls'
 import About from './components/about'
 import Skills from './components/skills'
-// import Proj  from './components/projects';
+import Proj  from './components/projects';
 import Footer from './components/footer';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Juls />
       <About />
       <Skills />
-      {/* <Proj /> */}
+      <Proj />
       <Footer />
     </>
   );

@@ -1,82 +1,75 @@
-// import gwacalc from '../images/gwacalc.png';
-// import aaipsd from '../images/aaipsd.png';
-// import icare from '../images/icare.png';
-// import lrt from '../images/lrt.png'; 
-// import anifind from '../images/anifind.png'
-// import clock from '../images/clock.png'
-// import fitlib from '../images/fitlibrary.png'
+import gwacalc from '../images/gwacalc.png';
+import aaipsd from '../images/aaipsd.png';
+import icare from '../images/icare.png';
+import lrt from '../images/lrt.png'; 
+import anifind from '../images/anifind.png';
+import clock from '../images/clock.png';
+import fitlib from '../images/fitlibrary.png';
 
-// const Proj = () => {
-//     return (
-//         <div className="projcontainer" id="projects">
-//             <div className="projtitle"><strong>Projects</strong></div>
-//             <div className="project-wrapper">
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>GWA-CALCULATOR</strong></div>
-//                     <a href='https://julscadenas.github.io/gwa-calculator/' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={gwacalc} alt="GWA Calculator"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>PHOTOGRAPHY PORTFOLIO</strong></div>
-//                     <a href='https://aai-psd.vercel.app/' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={aaipsd} alt="Photography Portfolio"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>iCARE WEBSITE</strong></div>
-//                     <a href='https://github.com/julsCadenas/iCARE-Website' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={icare} alt="iCare"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>LRT SYSTEM</strong></div>
-//                     <a href='https://github.com/julsCadenas/lrtProject' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={lrt} alt="LRT System"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>Anime Finder</strong></div>
-//                     <a href='https://myanifinder.vercel.app/' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={anifind} alt="Anime Finder"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>Clock Extension</strong></div>
-//                     <a href='https://github.com/julsCadenas/clockhome' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={clock} alt="clock extension"></img>
-//                     </a>
-//                 </div>
-//                 <div className='project'>
-//                     <div className='gwatitle'><strong>FEU Tech Library</strong></div>
-//                     <a href='https://github.com/julsCadenas/fitlib' target='_blank' className="gwacalc">
-//                         <div className="icon-wrapper">
-//                             <i className="devicon-github-original"></i>
-//                         </div>
-//                         <img src={fitlib} alt="clock extension"></img>
-//                     </a>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
+const projects = [
+    {
+        title: 'GWA-CALCULATOR',
+        link: 'https://julscadenas.github.io/gwa-calculator/',
+        image: gwacalc,
+        alt: 'GWA Calculator'
+    },
+    {
+        title: 'PHOTOGRAPHY PORTFOLIO',
+        link: 'https://aai-psd.vercel.app/',
+        image: aaipsd,
+        alt: 'Photography Portfolio'
+    },
+    {
+        title: 'iCARE WEBSITE',
+        link: 'https://github.com/julsCadenas/iCARE-Website',
+        image: icare,
+        alt: 'iCare'
+    },
+    {
+        title: 'LRT SYSTEM',
+        link: 'https://github.com/julsCadenas/lrtProject',
+        image: lrt,
+        alt: 'LRT System'
+    },
+    {
+        title: 'Anime Finder',
+        link: 'https://myanifinder.vercel.app/',
+        image: anifind,
+        alt: 'Anime Finder'
+    },
+    {
+        title: 'Clock Extension',
+        link: 'https://github.com/julsCadenas/clockhome',
+        image: clock,
+        alt: 'Clock Extension'
+    },
+    {
+        title: 'FEU Tech Library',
+        link: 'https://github.com/julsCadenas/fitlib',
+        image: fitlib,
+        alt: 'FEU Tech Library'
+    }
+];
 
-// export default Proj;
+const Proj = () => {
+    return (
+        <div className="max-h-fit font-Poppins flex flex-col justify-center items-center bg-white text-black dark:bg-black dark:text-white" id="projects">
+            <div className="text-2xl md:text-4xl mb-14 md:mb-16"><strong>Projects</strong></div>
+            <div className="flex flex-wrap justify-center gap-10 max-w-7xl transition-all">
+                {projects.map((project, index) => (
+                    <div className='flex flex-col justify-center items-center w-72 md:w-96' key={index}>
+                        <div className='text-center text-lg md:text-xl lg:text-2xl mb-4'>
+                            <strong>{project.title}</strong>
+                        </div>
+                        <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                            <img className='w-full h-40 md:h-60 object-cover shadow-lg rounded-3xl' src={project.image} alt={project.alt} />
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Proj;
+
