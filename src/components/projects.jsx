@@ -67,8 +67,8 @@ const Proj = () => {
     const handleButtonClick = (index) => {
         setActiveButtonIndex(index);
         setTimeout(() => {
-            setTappedIndex(null);  // Hide the buttons after a short delay
-        }, 200);  // Adjust delay as needed
+            setTappedIndex(null);  
+        }, 200);  
     };
 
     return (
