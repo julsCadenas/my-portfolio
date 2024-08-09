@@ -58,17 +58,14 @@ const projects = [
 
 const Proj = () => {
     const [tappedIndex, setTappedIndex] = useState(null);
-    const [activeButtonIndex, setActiveButtonIndex] = useState(null);
 
     const handleImageTap = (index) => {
         setTappedIndex(tappedIndex === index ? null : index);
     };
 
-    const handleButtonClick = (index) => {
-        setActiveButtonIndex(index);
-        setTimeout(() => {
-            setTappedIndex(null);  
-        }, 200);  
+    const handleButtonClick = (event) => {
+        event.stopPropagation(); 
+        setTappedIndex(null);  
     };
 
     return (
@@ -103,7 +100,7 @@ const Proj = () => {
                                     target='_blank' 
                                     rel='noopener noreferrer' 
                                     className={`flex items-center justify-center w-full h-full text-white dark:text-black dark:bg-white rounded-3xl ${tappedIndex === index || 'md:pointer-events-auto'} ${tappedIndex !== index && 'pointer-events-none'}`}
-                                    onClick={() => handleButtonClick(index)}
+                                    onClick={handleButtonClick}
                                 >
                                     <i className='devicon-github-original text-3xl md:text-5xl mr-3' />
                                     <p className='text-xl md:text-3xl'><strong>Source Code</strong></p>
@@ -115,7 +112,7 @@ const Proj = () => {
                                         target='_blank' 
                                         rel='noopener noreferrer' 
                                         className={`flex items-center justify-center w-full h-full text-white dark:text-black dark:bg-white rounded-3xl ${tappedIndex === index || 'md:pointer-events-auto'} ${tappedIndex !== index && 'pointer-events-none'}`}
-                                        onClick={() => handleButtonClick(index)}
+                                        onClick={handleButtonClick}
                                     >
                                         <i className='devicon-chrome-plain text-2xl md:text-4xl mr-3' />
                                         <p className='text-xl md:text-3xl'><strong>Open Website</strong></p>
