@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState ,useEffect } from 'react';
 import { SunMoon } from 'lucide-react';
 
 const Header = () => {
+    const [mode, setMode] = useState("dark");
+
     const scrollToSection = (id, event , offset) => {
         event.preventDefault();
         const element = document.getElementById(id);
@@ -14,7 +16,6 @@ const Header = () => {
         });
     };
 
-    const [mode, setMode] = React.useState("dark");
 
     useEffect(() => {
       const selectedTheme = localStorage.getItem("selectedTheme");
@@ -26,7 +27,7 @@ const Header = () => {
   
     const selectedTheme = localStorage.getItem("selectedTheme");
   
-    const toggleMode = (e) => {
+    const toggleMode = () => {
       const newMode = mode === "dark" ? "light" : "dark";
       setMode(newMode);
       localStorage.setItem("selectedTheme", newMode)
@@ -35,19 +36,21 @@ const Header = () => {
 
 
     return (
-        <header className="flex flex-col lg:flex-row items-center justify-between p-5 md:p-10 lg:px-44 bg-black text-white font-Poppins font-bold transition-all" id="header">
+        <header className="flex flex-col lg:flex-row items-center justify-between p-5 md:p-10 lg:px-44 bg-white text-black dark:bg-black dark:text-white font-Poppins font-bold transition-all" id="header">
             <div className="text-3xl hover:text-4xl transition-all mb-4 lg:mb-0">
-                <a href="#" onClick={(e) => scrollToSection('about', e)}>Julian Cadenas</a>
+                <p className='cursor-pointer' onClick={(e) => scrollToSection('about', e)}>Julian Cadenas</p>
             </div>
             <nav className="flex flex-row items-center text-lg md:text-2xl mt-1 md:mt-0">
-                <ul className="flex flex-row space-x-5 md:space-x-10">
-                    <li><a href="#" onClick={(e) => scrollToSection('about', e, 0)} className="hover:text-3xl transition-all">About</a></li>
-                    <li><a href="#" onClick={(e) => scrollToSection('skills', e, -100)} className="hover:text-3xl transition-all">Skills</a></li>
-                    <li><a href="#" onClick={(e) => scrollToSection('projects', e, 0)} className="hover:text-3xl transition-all">Projects</a></li>
-                    <li><a href="#" onClick={(e) => scrollToSection('footer', e, 0)} className="hover:text-3xl transition-all">Contact</a></li>
+                <ul className="flex flex-row space-x-5 md:space-x-10 ">
+                    <li><button onClick={(e) => scrollToSection('about', e, 0)} className="hover:text-3xl transition-all cursor-pointer">About</button></li>
+                    <li><button onClick={(e) => scrollToSection('skills', e, -100)} className="hover:text-3xl transition-all cursor-pointer">Skills</button></li>
+                    <li><button onClick={(e) => scrollToSection('projects', e, 0)} className="hover:text-3xl transition-all cursor-pointer">Projects</button></li>
+                    <li><button onClick={(e) => scrollToSection('footer', e, 0)} className="hover:text-3xl transition-all cursor-pointer">Contact</button></li>
                 </ul>
             </nav>
-            <a className="fixed bottom-8 right-8 md:bottom-10 md:right-10 w-12 md:w-14" onClick={toggleMode} defaultChecked={selectedTheme === "dark"}><SunMoon style={{ width: '100%', height: '100%' }} /></a>
+            <button className="fixed bottom-8 right-8 md:bottom-10 md:right-10 w-12 md:w-14 text-black dark:text-white" onClick={toggleMode} defaultChecked={selectedTheme === "dark"}>
+                <SunMoon style={{ width: '100%', height: '100%' }} />
+            </button>
         </header>
     );
 };

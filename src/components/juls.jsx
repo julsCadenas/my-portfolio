@@ -41,10 +41,11 @@ const Juls = () => {
 
     return (
         <div 
-            className="h-screen flex justify-center items-center md:py-[450px] bg-black text-white -mt-32 font-Poppins"
-            onClick={handleReplayAnimation}
+            className="h-screen flex justify-center items-center md:py-[450px] bg-white text-black dark:bg-black dark:text-white -mt-32 font-Poppins"
+            
         >
-            <p className="text-7xl md:text-8xl flex items-center flex-col md:flex-row space-x-0 md:space-x-6 hover:scale-110 transition-all">
+            <p className="text-7xl md:text-8xl flex items-center flex-col md:flex-row space-x-0 md:space-x-6 hover:scale-110 transition-all cursor-pointer" 
+            onClick={handleReplayAnimation}>
                 <span className=''>{displayHiImText}</span>
                 <span className="ml-2 font-bold">{displayJulsText}</span>
             </p>
